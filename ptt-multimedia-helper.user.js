@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		Ptt Multimedia Helper
 // @namespace		http://blog.gslin.org/plugins/ptt-multimedia-helper
-// @version		2011.0116.1
+// @version		2011.0118.1
 // @description		Expand Ptt Multimedia URL
 // @include		http://www.ptt.cc/bbs/*
 // ==/UserScript==
@@ -32,7 +32,7 @@
     var d = c.innerHTML;
 
     // Images (gif/jpg/png)
-    d = d.replace(/(https?:\/\/[-0-9a-z._]*\/[-0-9a-z_\/]*\.(gif|jpg|png))/ig, '<a href="$1" target="_blank">$1</a>\n<img src="$1" style="max-width: 900px"><br>');
+    d = d.replace(/(https?:\/\/[-0-9a-z._]*\/[-0-9a-z_\/]*\.(gif|jpg|png))/ig, '<a href="$1" target="_blank">$1</a>\n<img alt="Image: $1" src="$1" style="max-width: 900px"><br>');
 
     // YouTube
     d = d.replace(/(http:\/\/www.youtube\.com\/watch\?v=([-0-9a-z_]*))/ig, '<a href="$1" target="_blank">$1</a>\n<embed src="http://www.youtube.com/v/$2" type="application/x-shockwave-flash" width="600" height="450"></embed>');
