@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name		Ptt Multimedia Helper
-// @namespace		http://blog.gslin.org/plugins/ptt-multimedia-helper
-// @version		2011.0118.1
-// @description		Expand Ptt Multimedia URL
-// @include		http://www.ptt.cc/bbs/*
+// @name                Ptt Multimedia Helper
+// @namespace           http://blog.gslin.org/plugins/ptt-multimedia-helper
+// @version             2011.0118.1
+// @description         Expand Ptt Multimedia URL
+// @include             http://www.ptt.cc/bbs/*
 // ==/UserScript==
 
 (function(){
